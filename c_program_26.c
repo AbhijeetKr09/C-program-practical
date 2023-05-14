@@ -9,7 +9,6 @@ void main()
     scanf("%d %d", &a, &b);
     printf("Before swapping: a = %d, b = %d\n", a, b);
     swap(a, b);
-    printf("After swapping: a = %d, b = %d\n", a, b);
     swap_by_ref(&a, &b);
     printf("After swapping by ref: a = %d, b = %d\n", a, b);
 }
