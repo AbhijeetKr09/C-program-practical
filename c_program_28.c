@@ -9,8 +9,8 @@ int main()
     data = fopen("file_operation/data.txt", "r");
     copy_file = fopen("file_operation/copy_file.txt", "w");
 
-    while ((ch = fgetc(data)) != EOF)
-        fputc(ch, copy_file);
+    while ((ch = getc(data)) != EOF)
+        putc(ch, copy_file);
 
     printf("File copied successfully.\n");
 
