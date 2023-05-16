@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void main()
 {
@@ -21,11 +22,12 @@ void main()
         arr2[i] = arr[n-1];
         n -= 1;
     }
-    n = size - 1;
     for(i = 0; i < size; i++)
     {
         putc(arr2[i], rv);
     }
+    printf("Text in file read_file.txt is: %s \n", arr);
+    printf("The reversed text is: %s \n", arr2);
     printf("The string from read_file.txt has been reversed and saved in reverse_file.txt.");
     
     fclose(rd);
