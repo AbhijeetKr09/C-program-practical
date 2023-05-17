@@ -1,8 +1,8 @@
 import os
 import time
-for i in range(1, 30):
+for i in range(1, 31):
     try:
-        os.remove(f"c_program_{i}.exe")
+        os.remove(f"c_program_30.exe")
     except:
         continue
     time.sleep(1)
